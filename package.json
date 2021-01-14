@@ -9,6 +9,7 @@
     "test": "jest"
   },
   "author": "envis10n <envis10n@envis10n.dev>",
+  "repository": "https://github.com/envis10n/node-markov",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^26.0.20",
