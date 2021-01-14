@@ -4,7 +4,8 @@
   "description": "A markov chain text generator",
   "main": "build/index.js",
   "scripts": {
-    "start": "tsc && node .",
+    "start": "npm run build && node .",
+    "build": "tsc",
     "test": "jest"
   },
   "author": "envis10n <envis10n@envis10n.dev>",
