@@ -1,5 +1,5 @@
 {
-  "name": "node-markov",
+  "name": "envis10n-node-markov",
   "version": "0.1.0",
   "description": "A markov chain text generator",
   "main": "build/index.js",
