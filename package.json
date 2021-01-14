@@ -1,6 +1,6 @@
 {
   "name": "envis10n-markov",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A markov chain text generator",
   "main": "build/index.js",
   "scripts": {
