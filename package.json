@@ -1,12 +1,13 @@
 {
   "name": "envis10n-markov",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A markov chain text generator",
   "main": "build/index.js",
   "scripts": {
-    "start": "npm run build && node .",
-    "build": "tsc",
-    "test": "jest"
+    "start": "tsc && node .",
+    "build": "tsc && typedoc",
+    "test": "jest",
+    "doc": "typedoc"
   },
   "author": "envis10n <envis10n@envis10n.dev>",
   "repository": "https://github.com/envis10n/node-markov",
@@ -16,6 +17,7 @@
     "@types/node": "^14.14.20",
     "jest": "^26.6.3",
     "ts-jest": "^26.4.4",
+    "typedoc": "^0.22.11",
     "typescript": "^4.1.3"
   }
 }

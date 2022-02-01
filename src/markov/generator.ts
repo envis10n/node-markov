@@ -8,9 +8,17 @@ function min(a: number, b: number): number {
   return a < b ? a : b;
 }
 
+/**
+ * A markov chain generator that internally stores the parsed input tokens for later use.
+ */
 export class MarkovGenerator {
   public prefixes: string[] = [];
   public suffixes: ISuffixMap = {};
+  /**
+   * Generate an arbitrary amount of words based on the stored input tokens.
+   * @param length The amount of words to generate.
+   * @returns Generated text
+   */
   public generate(length: number): string {
     const res: string[] = [];
     let prefix: string = rand.randomElementSync(this.prefixes);
@@ -33,6 +41,11 @@ export class MarkovGenerator {
     }
     return res.join(" ");
   }
+  /**
+   * Parse input into tokens and store them mapped to each other based on the window size.
+   * @param input The input to parse.
+   * @param n The window size for parsing tokens.
+   */
   public parse(input: string, n: number = 2) {
     const inp: string[] = input.replace(/\r\n/g, '\n').split(" ");
     const temp: string[] = [];
